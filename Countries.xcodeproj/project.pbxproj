@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		84DE6BD6222FDDF70050214A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DE6BD5222FDDF70050214A /* AppDelegate.swift */; };
-		84DE6BD8222FDDF70050214A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DE6BD7222FDDF70050214A /* ViewController.swift */; };
 		84DE6BDB222FDDF70050214A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84DE6BD9222FDDF70050214A /* Main.storyboard */; };
 		84DE6BDD222FDDF80050214A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84DE6BDC222FDDF80050214A /* Assets.xcassets */; };
 		84DE6BE0222FDDF80050214A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84DE6BDE222FDDF80050214A /* LaunchScreen.storyboard */; };
+		84DE6BE8222FE0200050214A /* CountriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DE6BE7222FE0200050214A /* CountriesTableViewController.swift */; };
+		84DE6BEA222FE1640050214A /* CountriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DE6BE9222FE1640050214A /* CountriesTableViewCell.swift */; };
+		84DE6BEC222FE3800050214A /* CountriesListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DE6BEB222FE3800050214A /* CountriesListModel.swift */; };
+		84DE6BF0222FE84B0050214A /* CountryMutualBorderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DE6BEF222FE84B0050214A /* CountryMutualBorderTableViewController.swift */; };
+		84DE6C0222313CAE0050214A /* CountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DE6C0122313CAE0050214A /* CountryTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		84DE6BD2222FDDF70050214A /* Countries.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Countries.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84DE6BD5222FDDF70050214A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		84DE6BD7222FDDF70050214A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		84DE6BDA222FDDF70050214A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84DE6BDC222FDDF80050214A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84DE6BDF222FDDF80050214A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84DE6BE1222FDDF80050214A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84DE6BE7222FE0200050214A /* CountriesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesTableViewController.swift; sourceTree = "<group>"; };
+		84DE6BE9222FE1640050214A /* CountriesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesTableViewCell.swift; sourceTree = "<group>"; };
+		84DE6BEB222FE3800050214A /* CountriesListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesListModel.swift; sourceTree = "<group>"; };
+		84DE6BEF222FE84B0050214A /* CountryMutualBorderTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryMutualBorderTableViewController.swift; sourceTree = "<group>"; };
+		84DE6C0122313CAE0050214A /* CountryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CountryTableViewCell.swift; path = ../../../../../.Trash/CountryTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,34 @@
 		84DE6BD4222FDDF70050214A /* Countries */ = {
 			isa = PBXGroup;
 			children = (
+				84DE6BED222FE7C40050214A /* CountriesList */,
+				84DE6BEE222FE8030050214A /* CountriesMutualBorder */,
 				84DE6BD5222FDDF70050214A /* AppDelegate.swift */,
-				84DE6BD7222FDDF70050214A /* ViewController.swift */,
 				84DE6BD9222FDDF70050214A /* Main.storyboard */,
 				84DE6BDC222FDDF80050214A /* Assets.xcassets */,
 				84DE6BDE222FDDF80050214A /* LaunchScreen.storyboard */,
 				84DE6BE1222FDDF80050214A /* Info.plist */,
 			);
 			path = Countries;
+			sourceTree = "<group>";
+		};
+		84DE6BED222FE7C40050214A /* CountriesList */ = {
+			isa = PBXGroup;
+			children = (
+				84DE6BEB222FE3800050214A /* CountriesListModel.swift */,
+				84DE6BE7222FE0200050214A /* CountriesTableViewController.swift */,
+				84DE6BE9222FE1640050214A /* CountriesTableViewCell.swift */,
+			);
+			path = CountriesList;
+			sourceTree = "<group>";
+		};
+		84DE6BEE222FE8030050214A /* CountriesMutualBorder */ = {
+			isa = PBXGroup;
+			children = (
+				84DE6BEF222FE84B0050214A /* CountryMutualBorderTableViewController.swift */,
+				84DE6C0122313CAE0050214A /* CountryTableViewCell.swift */,
+			);
+			path = CountriesMutualBorder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +163,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84DE6BD8222FDDF70050214A /* ViewController.swift in Sources */,
+				84DE6C0222313CAE0050214A /* CountryTableViewCell.swift in Sources */,
+				84DE6BF0222FE84B0050214A /* CountryMutualBorderTableViewController.swift in Sources */,
+				84DE6BEC222FE3800050214A /* CountriesListModel.swift in Sources */,
+				84DE6BE8222FE0200050214A /* CountriesTableViewController.swift in Sources */,
 				84DE6BD6222FDDF70050214A /* AppDelegate.swift in Sources */,
+				84DE6BEA222FE1640050214A /* CountriesTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
